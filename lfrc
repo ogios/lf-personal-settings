@@ -109,9 +109,11 @@ map mf mkfile
 map md mkdir
 map bg setwallpaper
 map C clear
+map S shell
 
 # Movement
 map gn cd ~/.config/nvim
+map gl cd ~/.config/lf
 map gw cd ~/work
 map gh cd ~
 map ga cd ~/app
