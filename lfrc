@@ -72,7 +72,7 @@ cmd open_nvim_file ${{
 
 # fuzzy finder
 cmd fzf_jump ${{
-    res="$(find . -maxdepth 1 | fzf --reverse --header='Jump to location')"
+    res="$(find . -maxdepth 5 | fzf --reverse --header='Jump to location')"
     if [ -n "$res" ]; then
         if [ -d "$res" ]; then
             cmd="cd"
