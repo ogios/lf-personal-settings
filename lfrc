@@ -63,6 +63,14 @@ cmd restore_trash ${{
 }}
 
 # nvim
+cmd open_neovide_dir ${{
+    neovide .
+}}
+cmd open_neovide_file ${{
+    neovide "$f"
+}}
+
+# nvim
 cmd open_nvim ${{
     nvim
 }}
@@ -87,8 +95,10 @@ cmd fzf_jump ${{
 
 
 map <c-f> :fzf_jump
-map E :open_nvim
-map e :open_nvim_file
+map E :open_neovide_dir
+map e :open_neovide_file
+map I :open_nvim
+map i :open_nvim_file
 
 
 # Bindings
@@ -119,7 +129,8 @@ map C clear
 map S shell
 
 # Movement
-map gn cd ~/.config/nvim
+map gnc cd ~/.config/nvim
+map gnd cd ~/.local/share/nvim/
 map gl cd ~/.config/lf
 map gw cd ~/work
 map gh cd ~
