@@ -136,3 +136,5 @@ map gw cd ~/work
 map gh cd ~
 map ga cd ~/app
 map gt cd ~/.local/share/Trash/files
+map gss cd /etc/systemd/system/
+map gsu cd /etc/systemd/user/
