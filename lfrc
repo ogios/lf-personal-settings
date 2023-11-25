@@ -138,3 +138,4 @@ map ga cd ~/app
 map gt cd ~/.local/share/Trash/files
 map gss cd /etc/systemd/system/
 map gsu cd /etc/systemd/user/
+map gch cd ~/.config/hypr/
